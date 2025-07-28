@@ -20,12 +20,11 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       body {
-        background-color: #d5e1ef;
+        background-color: #D5E1EF;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #f0f0f0;
       }
       .card {
         font-family: "Outfit", sans-serif;
@@ -80,15 +79,19 @@
         font-size: 22px;
         margin-top: 24px;
         font-weight: 700;
+        letter-spacing: 0px;
       }
       .card-text-description {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
+        color: #4b5563;
+        line-height: 140%;
+        letter-spacing: 0.2px;
       }
     </style>
   </head>
   <body>
-    <div class="card">
+    <main class="card">
       <div class="card-content">
         <div class="card-image">
           <img src="./images/QR.svg" class="card-image-qr" alt="qr" />
@@ -96,7 +99,7 @@
           <div class="card-image-rounded-bottom"></div>
         </div>
         <div class="card-text">
-          <p class="card-text-highlight">
+          <h1 class="card-text-highlight">
             Improve your front-end skills by building projects
           </p>
           <p class="card-text-description">
@@ -105,6 +108,6 @@
           </p>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
