@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: #d5e1ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      .card {
+        font-family: "Outfit", sans-serif;
+        text-align: center;
+        width: 320px;
+        height: 499px;
+        background-color: #fff;
+        border-radius: 20px;
+      }
+      .card-content {
+        padding: 16px;
+      }
+      .card-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 288px;
+        height: 288px;
+        background-color: #2c7dfa;
+        border-radius: 10px;
+      }
+      .card-image-qr {
+        position: absolute;
+        width: 160px;
+        height: 1600px;
+        z-index: 1;
+      }
+      .card-image-rounded-top {
+        position: absolute;
+        top: -164.5px;
+        left: -131.5px;
+        width: 328px;
+        height: 328px;
+        background-color: #3685ff;
+        border-radius: 100%;
+      }
+      .card-image-rounded-bottom {
+        position: absolute;
+        top: 204.5px;
+        left: 131.5px;
+        width: 328px;
+        height: 328px;
+        background-color: #3685ff;
+        border-radius: 100%;
+      }
+      .card-text {
+        margin: 0px 16px 0px 16px;
+      }
+      .card-text-highlight {
+        font-size: 22px;
+        margin-top: 24px;
+        font-weight: 700;
+      }
+      .card-text-description {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="./images/QR.svg" class="card-image-qr" alt="qr" />
+          <div class="card-image-rounded-top"></div>
+          <div class="card-image-rounded-bottom"></div>
+        </div>
+        <div class="card-text">
+          <p class="card-text-highlight">
+            Improve your front-end skills by building projects
+          </p>
+          <p class="card-text-description">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
